@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap">
+</head>
+
+<body>
+    <header id="header">
+        <!------------ ICON ------------>
+        <div id="icon-header">
+            <img id="header-img"
+                src="https://cdn2.iconfinder.com/data/icons/beekeeping-at-garden/128/yumminky-garden-beekeeping-64-512.png"
+                alt="">
+            <h1 id="header-h1">Honey Product</h1>
+        </div>
+        <!------------ NAVIGATION MENU ------------>
+        <nav id="nav-bar">
+            <a class="nav-link " href="#icon-header"><i class="fa fa-fw fa-home"></i></a>
+            <a class="nav-link" href="#gallery-h">Gallery</a>
+            <a class="nav-link" href="#about-h">About</a>
+            <a class="nav-link" href="#prise-h">Prise</a>
+            <a class="nav-link" href="#form">Contacts</a>
+        </nav>
+    </header>
+    <main>
+        <!------------ GALLERY ------------>
+        <h2 id="gallery-h" class="head-h">Our Gallery</h2>
+        <div id="grid-container">
+            <!-- small images -->
+            <div class="grid-items">
+                <img class="small-elements" src="img/Apiary.jpg" onclick="currentSlide(1)" alt="apiary">
+            </div>
+            <div class="grid-items">
+                <img class="small-elements" src="img/Beeceeper.jpg" onclick="currentSlide(2)" alt="beeceeper">
+            </div>
+            <div class="grid-items">
+                <img class="small-elements" src="img/Honeycomb.jpg" onclick="currentSlide(3)" alt="honeycomb">
+            </div>
+            <div class="grid-items">
+                <img class="small-elements" src="img/Honey.webp" onclick="currentSlide(4)" alt="honey">
+            </div>
+            <div class="grid-items">
+                <img class="small-elements" src="img/Honey2.jpg" onclick="currentSlide(5)" alt="honey">
+            </div>
+            <!-- big images -->
+            <div class="item-big">
+                <img class="my-slides" src="img/Apiary.jpg" alt="apiary">
+                <img class="my-slides" src="img/Beeceeper.jpg" alt="beeceeper">
+                <img class="my-slides" src="img/Honeycomb.jpg" alt="honeycomb">
+                <img class="my-slides" src="img/Honey.webp" alt="honey">
+                <img class="my-slides" src="img/Honey2.jpg" alt="honey">
+            </div>
+        </div>
+        <!------------ VIDEO ------------>
+        <h2 class="head-h">Honey Product apiary</h2>
+        <div class="yt-video">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9ePic3dtykk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!------------ ABOUT ------------>
+        <h2 id="about-h" class="head-h">About us</h2>
+        <div id="about-hp">
+            <div id="p-about" class="about">
+                <p>
+                    Honey Product - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum. In culpa qui officia deserunt mollit anim id est laborum.Consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div id="li-about" class="about">
+                <p><i class="fa fa-fw fa-leaf fa-2x" style="color:green;"></i> <strong>Natural</strong> Lorem ipsum
+                    dolor sit amet ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p><i class="fa fa-fw fa-heart fa-2x" style="color:red;"></i> <strong>Healthy</strong> Lorem ipsum dolor
+                    sit amet ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p><i class="fa fa-fw fa-truck fa-2x" style="color:orange;"></i> <strong>Fast Shipping</strong> Lorem
+                    ipsum dolor sit amet ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            </div>
+        </div>
+        <!------------ PRISE LIST ------------>
+        <h2 id="prise-h" class="head-h">Prise list</h2>
+        <div class="prise-list">
+            <div class="prise" id="honey">
+                <h3 class="head-h3">Honey</h3>
+                <h4>14$</h4>
+                <p class="prise-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit
+                </p>
+                <button class="btn-select">Select</button>
+            </div>
+            <div class="prise" id="propolis">
+                <h3 class="head-h3">Propolis</h3>
+                <h4>5$</h4>
+                <p class="prise-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit
+                </p>
+                <button class="btn-select">Select</button>
+            </div>
+            <div class="prise" id="wax">
+                <h3 class="head-h3">Wax</h3>
+                <h4>12$</h4>
+                <p class="prise-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit
+                </p>
+                <button class="btn-select">Select</button>
+            </div>
+        </div>
+        <!------------ CONTACTS ------------>
+        <h2 id="contact-h" class="head-h">Contacts</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label id="email-h" for="email">We will contact you</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required="" />
+            <input id="submit" class="btn-select" type="submit" value="Get started" />
+        </form>
+    </main>
+    <!------------ FOOTER ------------>
+    <footer>
+        <div id="social" class="ft">
+            We in social networks <i class="fa fa-fw fa-twitter"></i> <i class="fa fa-fw fa-facebook"></i> <i
+                class="fa fa-fw fa-instagram"></i>
+            <i class="fa fa-fw fa-vk"></i>
+        </div>
+        <div id="copyright" class="ft">
+            Copyright 2020, Honey Product
+        </div>
+    </footer>
+</body>
+
+</html>
